@@ -31,7 +31,7 @@ const showTitles = (restObjects) => {
     
     
     let users = document.createElement('li')
-    users.textContent = restObjects.users
+    users.textContent = restObjects.users[0].id + "- " + restObjects.users[0].username
     listUsers.append(users)
 
     let div = document.getElementById("show-panel")
